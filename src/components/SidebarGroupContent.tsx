@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import {
   SidebarGroupContent as SidebarGroupContentShadCN,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { Note } from "@prisma/client";

@@ -24,7 +24,6 @@ function NewNoteButton({ user }: Props) {
       router.push("/login");
     } else {
       setLoading(true);
-      const savingToast = toast.info("Saving current note");
 
       await new Promise((resolve) =>
         setTimeout(resolve, debounceTimeout + 500),

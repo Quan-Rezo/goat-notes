@@ -2,7 +2,6 @@
 
 import { getUser } from "@/auth/server";
 import { prisma } from "@/db/prisma";
-import { debounceTimeout } from "@/lib/constant";
 import { handleError } from "@/lib/utils";
 import openai from "@/openai";
 import { ChatCompletionMessageParam } from "openai/resources/chat/completions";

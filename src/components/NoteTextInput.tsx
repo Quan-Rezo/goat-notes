@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 import { ChangeEvent } from "react";
 import { useEffect } from "react";
 import { updateNoteAction } from "@/actions/notes";
-import { toast } from "sonner";
 import useNote from "@/hooks/useNote";
 
 type Props = {

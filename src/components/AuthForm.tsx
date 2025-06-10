@@ -6,7 +6,7 @@ import { useTransition } from "react";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Button } from "./ui/button";
-import { Layout, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import Link from "next/link";
 import { toast } from "sonner";
 import { loginAction, signUpAction } from "@/actions/users";
