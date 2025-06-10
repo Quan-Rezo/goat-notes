@@ -6,6 +6,12 @@ import { handleError } from "@/lib/utils";
 import openai from "@/openai";
 import { ChatCompletionMessageParam } from "openai/resources/chat/completions";
 
+type NoteData = {
+  text: string;
+  createdAt: Date;
+  updatedAt: Date;
+};
+
 export const createNoteAction = async (noteId: string) => {
   try {
     const user = await getUser();
@@ -91,7 +97,7 @@ export const askAIAboutNotesAction = async (
     }
 
     const formattedNotes = notes
-      .map((note: { text: string; createdAt: Date; updatedAt: Date }) =>
+      .map((note: NoteData) =>
         `Text: ${note.text}
       CreatedAt: ${note.createdAt}
       UpdatedAt: ${note.updatedAt}
